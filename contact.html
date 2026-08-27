@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ThinkBox Web Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Contact</div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contact-content">
+        <section class="contact-intro">
+            <p class="eyebrow">Start a conversation</p>
+            <h1>Let’s make something work beautifully.</h1>
+            <p>Get in touch with ThinkBox Web Development to discuss your next website, refresh an existing one, or ask a question about our services.</p>
+        </section>
+
+        <address class="contact-details">
+            <div class="contact-detail">
+                <span class="contact-label">Telephone</span>
+                <p>+447623439456 (text only)</p>
+            </div>
+            <div class="contact-detail contact-detail--email">
+                <span class="contact-label">Email</span>
+                <p><a href="mailto:thinkboxwebdevelopment@proton.me">thinkboxwebdevelopment@proton.me</a></p>
+            </div>
+            <div class="contact-detail">
+                <span class="contact-label">Location</span>
+                <p>Douglas<br>Isle of Man</p>
+            </div>
+        </address>
+
+        <section class="contact-form-section" aria-labelledby="contact-form-title">
+            <div class="contact-form-intro">
+                <p class="eyebrow">Send a message</p>
+                <h2 id="contact-form-title">Tell us what you’re working on.</h2>
+                <p>Share a few details.</p>
+            </div>
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgaewzwp" method="post">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="form-field form-field--full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="7" required></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="New website enquiry">
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ThinkBox Web Development. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
